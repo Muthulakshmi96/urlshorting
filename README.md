@@ -6,13 +6,17 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+ ruby  - 3.0.5
 
 * System dependencies
 
 * Configuration
 
 * Database creation
-
+  ShortenedUrl
+     orgiginal_url
+     short_url
+     sanitize_url
 * Database initialization
 
 * How to run the test suite
