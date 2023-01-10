@@ -1,0 +1,1919 @@
+  [1m[35m (33.4ms)[0m  [1m[35mCREATE DATABASE "urlshort_development" ENCODING = 'unicode'[0m
+  [1m[35m (22.4ms)[0m  [1m[35mCREATE DATABASE "urlshort_test" ENCODING = 'unicode'[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7852386835139182875)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-01-06 14:52:38.552190"], ["updated_at", "2023-01-06 14:52:38.552190"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7852386835139182875)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-01-06 20:37:55 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/muthulakshmi/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/muthulakshmi/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.9ms | Allocations: 610)
+Completed 200 OK in 15ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 4817)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-06 20:48:25 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/muthulakshmi/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/muthulakshmi/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.3ms | Allocations: 267)
+Completed 200 OK in 7ms (Views: 6.1ms | Allocations: 1172)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-06 20:48:26 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/muthulakshmi/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/muthulakshmi/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 50)
+Completed 200 OK in 2ms (Views: 1.3ms | Allocations: 457)
+
+
+Started GET "/urlshortener" for 127.0.0.1 at 2023-01-06 20:48:51 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/urlshortener"):
+  
+Started GET "/urlshortener" for 127.0.0.1 at 2023-01-06 20:49:25 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/urlshortener"):
+  
+Started GET "/urlshortener" for 127.0.0.1 at 2023-01-06 20:49:26 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/urlshortener"):
+  
+Started GET "/" for 127.0.0.1 at 2023-01-06 20:50:11 +0530
+  
+ActionController::RoutingError (uninitialized constant ArticlesController
+Did you mean?  AbstractController):
+  
+Started GET "/" for 127.0.0.1 at 2023-01-06 20:50:37 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/muthulakshmi/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/muthulakshmi/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 58)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 508)
+
+
+Started GET "/urlshortener/index" for 127.0.0.1 at 2023-01-06 20:50:47 +0530
+Processing by UrlshortenerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering urlshortener/index.html.erb within layouts/application
+  Rendered urlshortener/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 143)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/environment.js:1:87)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/development.js:3:21)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/muthulakshmi/urlshort/node_modules/yargs/yargs.js:576:18)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+
+  Rendered layout layouts/application.html.erb (Duration: 1211.0ms | Allocations: 15245)
+Completed 500 Internal Server Error in 1215ms (Allocations: 16641)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/muthulakshmi/urlshort/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2023-01-06 22:15:04 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/muthulakshmi/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/muthulakshmi/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.6ms | Allocations: 505)
+Completed 200 OK in 10ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 3703)
+
+
+Started GET "/urlshortener/index" for 127.0.0.1 at 2023-01-06 22:16:09 +0530
+Processing by UrlshortenerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering urlshortener/index.html.erb within layouts/application
+  Rendered urlshortener/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 148)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/environment.js:1:87)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/development.js:3:21)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/muthulakshmi/urlshort/node_modules/yargs/yargs.js:576:18)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+
+  Rendered layout layouts/application.html.erb (Duration: 1195.8ms | Allocations: 8132)
+Completed 500 Internal Server Error in 1198ms (ActiveRecord: 0.0ms | Allocations: 9586)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/muthulakshmi/urlshort/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/urlshortener/index" for 127.0.0.1 at 2023-01-06 22:17:25 +0530
+Processing by UrlshortenerController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering urlshortener/index.html.erb within layouts/application
+  Rendered urlshortener/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 144)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/environment.js:1:87)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/development.js:3:21)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/muthulakshmi/urlshort/node_modules/yargs/yargs.js:576:18)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+
+  Rendered layout layouts/application.html.erb (Duration: 1092.4ms | Allocations: 5189)
+Completed 500 Internal Server Error in 1095ms (ActiveRecord: 0.0ms | Allocations: 6472)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/muthulakshmi/urlshort/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/urlshortener/index" for 127.0.0.1 at 2023-01-06 22:21:23 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/urlshortener/index"):
+  
+Started GET "/urlshortener/index" for 127.0.0.1 at 2023-01-06 22:22:19 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/urlshortener/index"):
+  
+Started GET "/urlshortener/index" for 127.0.0.1 at 2023-01-06 22:22:32 +0530
+  
+ArgumentError ('/home/muthulakshmi/urlshort/urlshortener' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/urlshortener/index" for 127.0.0.1 at 2023-01-06 22:23:08 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/urlshortener/index"):
+  
+Started GET "/urlshortener/assignments" for 127.0.0.1 at 2023-01-06 22:31:10 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/urlshortener/assignments"):
+  
+Started GET "/urlshortener/assignments" for 127.0.0.1 at 2023-01-06 22:32:35 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/urlshortener/assignments"):
+  
+Started GET "/urlshortener/assignments" for 127.0.0.1 at 2023-01-06 22:58:27 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/urlshortener/assignments"):
+  
+Started GET "/urlshortener/assignments" for 127.0.0.1 at 2023-01-06 23:01:51 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/urlshortener/assignments"):
+  
+Started GET "/" for 127.0.0.1 at 2023-01-06 23:02:02 +0530
+Processing by AssignmentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering assignments/index.html.erb within layouts/application
+  Rendered assignments/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 141)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/environment.js:1:87)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/development.js:3:21)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/muthulakshmi/urlshort/node_modules/yargs/yargs.js:576:18)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+
+  Rendered layout layouts/application.html.erb (Duration: 1068.4ms | Allocations: 18036)
+Completed 500 Internal Server Error in 1073ms (Allocations: 20572)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/muthulakshmi/urlshort/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2023-01-06 23:07:35 +0530
+Processing by AssignmentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering assignments/index.html.erb within layouts/application
+  Rendered assignments/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 139)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/environment.js:1:87)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/development.js:3:21)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/muthulakshmi/urlshort/node_modules/yargs/yargs.js:576:18)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+
+  Rendered layout layouts/application.html.erb (Duration: 1120.3ms | Allocations: 5209)
+Completed 500 Internal Server Error in 1124ms (Allocations: 6469)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/muthulakshmi/urlshort/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     # <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2023-01-06 23:07:45 +0530
+Processing by AssignmentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering assignments/index.html.erb within layouts/application
+  Rendered assignments/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 139)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/environment.js:1:87)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/development.js:3:21)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/muthulakshmi/urlshort/node_modules/yargs/yargs.js:576:18)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+
+  Rendered layout layouts/application.html.erb (Duration: 1091.6ms | Allocations: 5184)
+Completed 500 Internal Server Error in 1096ms (Allocations: 6444)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/muthulakshmi/urlshort/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     # <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     # <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2023-01-06 23:07:49 +0530
+Processing by AssignmentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering assignments/index.html.erb within layouts/application
+  Rendered assignments/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+Started GET "/" for 127.0.0.1 at 2023-01-06 23:07:50 +0530
+Processing by AssignmentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering assignments/index.html.erb within layouts/application
+  Rendered assignments/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/environment.js:1:87)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/development.js:3:21)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/muthulakshmi/urlshort/node_modules/yargs/yargs.js:576:18)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+
+  Rendered layout layouts/application.html.erb (Duration: 1072.3ms | Allocations: 9371)
+Completed 500 Internal Server Error in 1073ms (Allocations: 9763)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/muthulakshmi/urlshort/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     # <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     # <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+[Webpacker] Compilation failed:
+/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/environment.js:1:87)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/development.js:3:21)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/muthulakshmi/urlshort/node_modules/yargs/yargs.js:576:18)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+
+  Rendered layout layouts/application.html.erb (Duration: 1086.1ms | Allocations: 224608)
+Completed 500 Internal Server Error in 1087ms (Allocations: 224970)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/muthulakshmi/urlshort/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     # <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     # <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2023-01-06 23:08:12 +0530
+Processing by AssignmentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering assignments/index.html.erb within layouts/application
+  Rendered assignments/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 139)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/environment.js:1:87)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/development.js:3:21)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/muthulakshmi/urlshort/node_modules/yargs/yargs.js:576:18)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+
+  Rendered layout layouts/application.html.erb (Duration: 1045.2ms | Allocations: 5189)
+Completed 500 Internal Server Error in 1050ms (Allocations: 6412)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/muthulakshmi/urlshort/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     # <%= csp_meta_tag %>
+     8: 
+     9:     # <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     # <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2023-01-06 23:08:19 +0530
+Processing by AssignmentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering assignments/index.html.erb within layouts/application
+  Rendered assignments/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 140)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/environment.js:1:87)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/development.js:3:21)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/muthulakshmi/urlshort/node_modules/yargs/yargs.js:576:18)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+
+  Rendered layout layouts/application.html.erb (Duration: 1129.5ms | Allocations: 5184)
+Completed 500 Internal Server Error in 1133ms (Allocations: 6444)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/muthulakshmi/urlshort/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2023-01-06 23:09:42 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AssignmentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering assignments/index.html.erb within layouts/application
+  Rendered assignments/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 365)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/environment.js:1:87)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/development.js:3:21)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/muthulakshmi/urlshort/node_modules/yargs/yargs.js:576:18)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+
+  Rendered layout layouts/application.html.erb (Duration: 1043.1ms | Allocations: 8310)
+Completed 500 Internal Server Error in 1048ms (ActiveRecord: 0.0ms | Allocations: 11870)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/muthulakshmi/urlshort/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2023-01-06 23:16:37 +0530
+Processing by AssignmentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering assignments/index.html.erb within layouts/application
+  Rendered assignments/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 139)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/environment.js:1:87)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/development.js:3:21)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/muthulakshmi/urlshort/node_modules/yargs/yargs.js:576:18)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+
+  Rendered layout layouts/application.html.erb (Duration: 1094.0ms | Allocations: 5192)
+Completed 500 Internal Server Error in 1097ms (Allocations: 6469)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/muthulakshmi/urlshort/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7: #     <%= csp_meta_tag %>
+     8: 
+     9: #     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10: #     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11: #   </head>
+    12: 
+    13: #   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2023-01-06 23:19:09 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AssignmentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering assignments/index.html.erb within layouts/application
+  Rendered assignments/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 365)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/environment.js:1:87)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/development.js:3:21)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/muthulakshmi/urlshort/node_modules/yargs/yargs.js:576:18)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+
+  Rendered layout layouts/application.html.erb (Duration: 1081.8ms | Allocations: 8305)
+Completed 500 Internal Server Error in 1086ms (ActiveRecord: 0.0ms | Allocations: 11865)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/muthulakshmi/urlshort/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2023-01-06 23:24:15 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AssignmentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering assignments/index.html.erb within layouts/application
+  Rendered assignments/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 365)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/environment.js:1:87)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/development.js:3:21)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/muthulakshmi/urlshort/node_modules/yargs/yargs.js:576:18)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+
+  Rendered layout layouts/application.html.erb (Duration: 1041.7ms | Allocations: 8311)
+Completed 500 Internal Server Error in 1046ms (ActiveRecord: 0.0ms | Allocations: 11871)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/muthulakshmi/urlshort/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2023-01-06 23:28:18 +0530
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AssignmentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering assignments/index.html.erb within layouts/application
+  Rendered assignments/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 365)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+
+Error: Cannot find module '@rails/webpacker'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/environment.js:1:87)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/config/webpack/development.js:3:21)
+    at Module._compile (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (/home/muthulakshmi/urlshort/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WEBPACK_OPTIONS (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:114:13)
+    at requireConfig (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:116:6)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:123:17
+    at Array.forEach (<anonymous>)
+    at module.exports (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/utils/convert-argv.js:121:15)
+    at yargs.parse (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:71:45)
+    at Object.parse (/home/muthulakshmi/urlshort/node_modules/yargs/yargs.js:576:18)
+    at /home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/home/muthulakshmi/urlshort/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+
+  Rendered layout layouts/application.html.erb (Duration: 1074.7ms | Allocations: 8311)
+Completed 500 Internal Server Error in 1081ms (ActiveRecord: 0.0ms | Allocations: 11871)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/muthulakshmi/urlshort/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2023-01-07 00:24:55 +0530
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AssignmentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering assignments/index.html.erb within layouts/application
+  Rendered assignments/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 365)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 20343)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 23696)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x00000000006e00>
+Did you mean?  javascript_path
+               javascript_tag):
+     7: #     <%= csp_meta_tag %>
+     8: 
+     9: #     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10: #     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11: #   </head>
+    12: 
+    13: #   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2023-01-07 00:26:02 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb
+  Rendered assignments/index.html.erb (Duration: 0.5ms | Allocations: 368)
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 4205)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7852386835139182875)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUrlLinks (20230109035549)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.9ms)[0m  [1m[35mCREATE TABLE "url_links" ("id" bigserial primary key, "url" character varying, "slug" character varying, "clicked" integer DEFAULT 0, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230109035549"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7852386835139182875)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-01-10 09:19:27 +0530
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb
+  Rendered assignments/index.html.erb (Duration: 1.1ms | Allocations: 482)
+Completed 200 OK in 20ms (Views: 6.3ms | ActiveRecord: 3.5ms | Allocations: 10267)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-10 09:32:26 +0530
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb
+  Rendered assignments/index.html.erb (Duration: 0.4ms | Allocations: 57)
+Completed 200 OK in 45ms (Views: 3.8ms | ActiveRecord: 15.6ms | Allocations: 9006)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7852386835139182875)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateShortenedUrls (20230110040419)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (16.5ms)[0m  [1m[35mCREATE TABLE "shortened_urls" ("id" bigserial primary key, "orgiginal_url" text, "short_url" character varying, "sanitize_url" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230110040419"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7852386835139182875)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7852386835139182875)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7852386835139182875)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-01-10 10:00:45 +0530
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb
+  Rendered assignments/index.html.erb (Duration: 0.5ms | Allocations: 377)
+Completed 200 OK in 17ms (Views: 2.7ms | ActiveRecord: 4.9ms | Allocations: 8992)
+
+
+Started GET "/?enter+url=https%3A%2F%2Fwww.facebook.com%2F" for 127.0.0.1 at 2023-01-10 10:01:17 +0530
+Processing by AssignmentsController#index as HTML
+  Parameters: {"enter url"=>"https://www.facebook.com/"}
+  Rendering assignments/index.html.erb
+  Rendered assignments/index.html.erb (Duration: 0.1ms | Allocations: 42)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 500)
+
+
+Started GET "/?enter+url=https%3A%2F%2Fwww.facebook.com%2F" for 127.0.0.1 at 2023-01-10 10:05:52 +0530
+Processing by AssignmentsController#index as HTML
+  Parameters: {"enter url"=>"https://www.facebook.com/"}
+  Rendering assignments/index.html.erb
+  Rendered assignments/index.html.erb (Duration: 0.3ms | Allocations: 154)
+Completed 200 OK in 11ms (Views: 1.3ms | ActiveRecord: 2.8ms | Allocations: 5869)
+
+
+Started GET "/?enter+url=https%3A%2F%2Fwww.facebook.com%2F" for 127.0.0.1 at 2023-01-10 10:06:10 +0530
+Processing by AssignmentsController#index as HTML
+  Parameters: {"enter url"=>"https://www.facebook.com/"}
+  Rendering assignments/index.html.erb
+  Rendered assignments/index.html.erb (Duration: 0.1ms | Allocations: 36)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 435)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-10 10:06:21 +0530
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb
+  Rendered assignments/index.html.erb (Duration: 0.1ms | Allocations: 37)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 423)
+
+
+Started POST "/assignments/create" for 127.0.0.1 at 2023-01-10 10:06:30 +0530
+Processing by AssignmentsController#create as HTML
+  Parameters: {"original_url"=>"https://www.facebook.com/"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 553)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:211:in `handle_unverified_request'
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:243:in `handle_unverified_request'
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:238:in `verify_authenticity_token'
+activesupport (6.1.7) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.7) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.7) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.7) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.7) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+activesupport (6.1.7) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.7) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.7) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.7) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.7) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.7) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.7) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.7) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.5) lib/rack/etag.rb:27:in `call'
+rack (2.2.5) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.5) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.5) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.5) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.7) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.5) lib/rack/method_override.rb:24:in `call'
+rack (2.2.5) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+railties (6.1.7) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started PUT "/__web_console/repl_sessions/de09cc8f5b303cc69cadc947b9d9aa4a" for 127.0.0.1 at 2023-01-10 10:18:30 +0530
+Started PUT "/__web_console/repl_sessions/de09cc8f5b303cc69cadc947b9d9aa4a" for 127.0.0.1 at 2023-01-10 10:18:31 +0530
+Started PUT "/__web_console/repl_sessions/de09cc8f5b303cc69cadc947b9d9aa4a" for 127.0.0.1 at 2023-01-10 10:18:45 +0530
+Started PUT "/__web_console/repl_sessions/de09cc8f5b303cc69cadc947b9d9aa4a" for 127.0.0.1 at 2023-01-10 10:18:45 +0530
+Started PUT "/__web_console/repl_sessions/de09cc8f5b303cc69cadc947b9d9aa4a" for 127.0.0.1 at 2023-01-10 10:18:53 +0530
+Started POST "/assignments/create" for 127.0.0.1 at 2023-01-10 10:19:47 +0530
+Processing by AssignmentsController#create as HTML
+  Parameters: {"original_url"=>"https://www.facebook.com/"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (Allocations: 477)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:211:in `handle_unverified_request'
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:243:in `handle_unverified_request'
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:238:in `verify_authenticity_token'
+activesupport (6.1.7) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.7) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.7) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.7) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.7) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+activesupport (6.1.7) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.7) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.7) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.7) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.7) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.7) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.7) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.7) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.5) lib/rack/etag.rb:27:in `call'
+rack (2.2.5) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.5) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.5) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.5) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.7) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.5) lib/rack/method_override.rb:24:in `call'
+rack (2.2.5) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+railties (6.1.7) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-01-10 10:19:52 +0530
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb
+  Rendered assignments/index.html.erb (Duration: 0.1ms | Allocations: 56)
+Completed 200 OK in 23ms (Views: 0.9ms | ActiveRecord: 7.0ms | Allocations: 8970)
+
+
+Started POST "/assignments/create" for 127.0.0.1 at 2023-01-10 10:19:54 +0530
+Processing by AssignmentsController#create as HTML
+  Parameters: {"original_url"=>"https://www.facebook.com/"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 467)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:211:in `handle_unverified_request'
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:243:in `handle_unverified_request'
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:238:in `verify_authenticity_token'
+activesupport (6.1.7) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.7) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.7) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.7) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.7) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+activesupport (6.1.7) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.7) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.7) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.7) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.7) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.7) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.7) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.7) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.5) lib/rack/etag.rb:27:in `call'
+rack (2.2.5) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.5) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.5) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.5) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.7) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.5) lib/rack/method_override.rb:24:in `call'
+rack (2.2.5) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+railties (6.1.7) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-01-10 10:43:30 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb
+  Rendered assignments/index.html.erb (Duration: 0.5ms | Allocations: 376)
+Completed 200 OK in 10ms (Views: 2.1ms | ActiveRecord: 2.7ms | Allocations: 8914)
+
+
+Started POST "/assignments/create" for 127.0.0.1 at 2023-01-10 10:43:34 +0530
+Processing by AssignmentsController#create as HTML
+  Parameters: {"original_url"=>"https://www.facebook.com/"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms | Allocations: 580)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:211:in `handle_unverified_request'
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:243:in `handle_unverified_request'
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:238:in `verify_authenticity_token'
+activesupport (6.1.7) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.7) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.7) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.7) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.7) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+activesupport (6.1.7) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.7) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.7) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.7) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.7) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.7) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.7) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.7) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.5) lib/rack/etag.rb:27:in `call'
+rack (2.2.5) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.5) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.5) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.5) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.7) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.5) lib/rack/method_override.rb:24:in `call'
+rack (2.2.5) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+railties (6.1.7) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-01-10 10:45:14 +0530
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb
+  Rendered assignments/index.html.erb (Duration: 0.1ms | Allocations: 56)
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 2.7ms | Allocations: 4768)
+
+
+Started POST "/assignments/create" for 127.0.0.1 at 2023-01-10 10:45:20 +0530
+Processing by AssignmentsController#create as HTML
+  Parameters: {"original_url"=>"https://www.facebook.com/"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 485)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:211:in `handle_unverified_request'
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:243:in `handle_unverified_request'
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:238:in `verify_authenticity_token'
+activesupport (6.1.7) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.7) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.7) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.7) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.7) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+activesupport (6.1.7) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.7) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.7) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.7) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.7) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.7) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.7) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.7) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.5) lib/rack/etag.rb:27:in `call'
+rack (2.2.5) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.5) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.5) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.5) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.7) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.5) lib/rack/method_override.rb:24:in `call'
+rack (2.2.5) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+railties (6.1.7) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-01-10 10:45:48 +0530
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb
+  Rendered assignments/index.html.erb (Duration: 0.1ms | Allocations: 57)
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 2.5ms | Allocations: 4774)
+
+
+Started POST "/assignments/create" for 127.0.0.1 at 2023-01-10 10:45:52 +0530
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for AssignmentsController
+Did you mean?  shortened
+               index
+               ferch_original_url
+               show_url):
+  
+actionpack (6.1.7) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.5) lib/rack/etag.rb:27:in `call'
+rack (2.2.5) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.5) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.5) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.5) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.7) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.5) lib/rack/method_override.rb:24:in `call'
+rack (2.2.5) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+railties (6.1.7) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/assignments/create" for 127.0.0.1 at 2023-01-10 10:46:16 +0530
+Processing by AssignmentsController#create as HTML
+  Parameters: {"original_url"=>"https://www.facebook.com/"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 531)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:211:in `handle_unverified_request'
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:243:in `handle_unverified_request'
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:238:in `verify_authenticity_token'
+activesupport (6.1.7) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.7) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.7) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.7) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.7) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+activesupport (6.1.7) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.7) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.7) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.7) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.7) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.7) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.7) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.7) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.5) lib/rack/etag.rb:27:in `call'
+rack (2.2.5) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.5) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.5) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.5) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.7) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.5) lib/rack/method_override.rb:24:in `call'
+rack (2.2.5) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+railties (6.1.7) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/assignments/create" for 127.0.0.1 at 2023-01-10 10:46:36 +0530
+Processing by AssignmentsController#create as HTML
+  Parameters: {"original_url"=>"https://www.facebook.com/"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms | Allocations: 479)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:211:in `handle_unverified_request'
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:243:in `handle_unverified_request'
+actionpack (6.1.7) lib/action_controller/metal/request_forgery_protection.rb:238:in `verify_authenticity_token'
+activesupport (6.1.7) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.7) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.7) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.7) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.7) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.7) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+activesupport (6.1.7) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.7) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.7) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.7) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.7) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.7) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.7) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.7) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.5) lib/rack/etag.rb:27:in `call'
+rack (2.2.5) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.5) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.5) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.5) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.7) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.5) lib/rack/method_override.rb:24:in `call'
+rack (2.2.5) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.5) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+railties (6.1.7) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
